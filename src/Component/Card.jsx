@@ -24,11 +24,12 @@ export default function Card({ value, index, handleDeletebtn }) {
     </div>
   );
 }
-
 Card.propTypes = {
   value: PropTypes.shape({
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
   }).isRequired,
+  index: PropTypes.number.isRequired,
+  handleDeletebtn: PropTypes.func.isRequired,
 };
